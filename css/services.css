@@ -35,7 +35,7 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #ffffff;    
     background-color: #29292c;
     background-image:
-    url("img/bg/lion-head-wide.jpg");
+    url("../img/bg/lion-head-wide.jpg");
     background-repeat: no-repeat;
     background-position:center top;
     
@@ -121,7 +121,7 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-bottom: 21px;
 }
 
-.2:after {
+.list:after {
     content: "/";
     display: block;
 }
