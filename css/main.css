@@ -1,0 +1,545 @@
+
+* {
+    box-sizing: border-box;
+} 
+
+body, html {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+a {
+    text-decoration: none; 
+    color:  white;
+}
+
+p, h1, h2, h3, h4, h5, h6 { 
+    margin: 0; 
+    padding: 0;
+    }
+
+
+
+
+
+body{
+
+    font: 400 16px/1.42 'Open Sans', sans-serif;
+    color: #ffffff;    
+    background-color: #29292c;
+    background-image:
+    url("img/bg/lion-header.jpg"),
+    url("img/bg/bottom-pic.png");
+    background-repeat: no-repeat;
+    background-position:center top,bottom 274px right -8px;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+
+
+.wrapper  {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;    
+   
+}
+
+/* Шапка*/
+
+.header {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 200px;
+}
+
+.logo{
+    margin-right: 92px;
+    width: 165px;
+    height: 30px;    
+    display: inline-block;    
+    vertical-align: top;
+    
+}
+
+.menu{
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu__list{
+    font: 400 14px/1.42 'Open Sans', sans-serif;   /** проверить это правило*/
+            
+}
+
+.menu__item {
+    margin-right: 52px;
+    display: inline-block;
+}
+
+.menu__item:last-child {
+    
+    margin-right: 0px;
+}
+
+
+.menu__url:hover {
+    color: #dfb56d;
+}
+
+.menu__url-active {    
+    color: #dfb56d;
+}
+
+.header .contact{
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    right: 0px;
+    font: 400 26px/1.42 'Open Sans', sans-serif;
+    text-align: right;    
+}
+
+.contact__phone{
+    color: white;
+}
+
+.contacts__workhours{
+    margin-top: -4px;
+    font-size: 13px;
+    color: #dfb56d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contacts__workhours:hover{                           
+    text-decoration: none;
+}
+
+
+.button{
+    padding: 16px 39px;
+    border-radius: 4px;
+    background-color: #dfb56d;
+    border: none;
+    color: white;    
+    font: 700 14px/1.42 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover {    
+    background-color: #d3a556;
+}
+
+/* Блоко промо*/
+
+
+
+.promo{
+    width: 400px;
+    margin-bottom: 173px;
+    display: inline-block;    
+}
+
+h1{
+    margin-bottom: 18px;
+    font: 700 48px/1.2 'Open Sans', sans-serif;    
+    
+}
+
+
+
+.promo__caption {
+    margin-bottom: 45px;
+    color: #dfb56d;
+    font-size: 18px;
+    
+}
+.promo__button{
+    box-shadow: 0 0 30px rgba(223, 181, 109, 0.15);
+}
+.promo__button:hover{
+    box-shadow: 0 0 30px rgba(211, 165, 68, 0.3);
+}
+
+
+
+
+/* Блок карты*/
+
+h2{
+    font: 700 36px/1.2 'Open Sans', sans-serif;
+}
+
+.offer {
+    margin-bottom: 135px;
+}
+.offer__title{
+    margin-bottom: 51px;
+}
+
+.offer__list {
+    color: black;
+    }
+
+.offer__item {
+    position: relative;
+    vertical-align: top;
+
+    display: inline-block;    
+    margin-right: 22px; 
+    list-style-type: none;
+    width: 362px;
+    min-height: 470px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+
+
+
+.offer__item:last-child {
+    margin-right: 0px; 
+}
+
+.offer__header{
+    min-height: 162px;
+    position: relative;
+}
+
+.offer__header:before{
+    content: "";
+    display: block;
+    width: 285px; 
+    height: 285px;
+    background: #a1a19d;
+    border-radius: 50%;
+    position: absolute;
+    top: -122px;
+    right: -93px;
+}
+
+.offer__item--theme--gary .offer__header:before{
+    background: #a5a5a4;
+}
+.offer__item--theme--blue .offer__header:before{
+    background: #556180;
+}
+.offer__item--theme--gold .offer__header:before{    
+    background: #978455;
+}
+
+
+.offer__card-bg{
+    position: absolute;
+    top: 50%;    
+    left: 50%;    
+    margin: -32px -44px;
+}
+
+.offer__card {
+    padding: 36px 29px;
+    padding-top: 27px;
+}
+
+.offer__card-name{
+    margin-bottom: 22px;
+}
+
+.offer__card-descripton{
+    color: #333;
+}
+
+
+h3{
+    font: 740 24px/1.2 'Open Sans', sans-serif;
+}
+
+
+.offer_card__card-content{
+    margin-bottom: 46px;
+}
+
+.offer__card-service{
+    margin-right: 11px;
+    width: 137px;    
+    display: inline-block;    
+    vertical-align: top;
+}
+
+.offer__card-service:last-child{
+    margin-right: 0px;
+}
+
+.offer__card-terms{
+    font-size: 36px;
+    margin: 0px;
+}
+
+
+
+.offer__card-terms-befor{
+    font-size: 30px;
+}
+
+.offer__button-container{
+    
+    text-align: center;
+}
+
+.offer__button {
+    background-color: #202123;
+}
+
+
+.offer__button:hover {
+    background-color: #dfb56d;
+}
+.offer__button:active {
+    background-color: #d3a556;
+}
+
+
+
+
+.news__card-date{
+    font-size: 14px;
+}
+
+
+
+/*Блок новости и акции */
+.news__list{
+    margin-bottom: 50px;
+}
+
+
+.news{
+    margin-bottom: 150px;
+}
+.news__title {
+    margin-bottom: 52px;
+}
+
+
+.news__item{
+    margin-right: 25px;
+    height: 391px;
+    width: 555px;
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    border-radius: 4px;     
+    overflow: hidden; 
+    
+}
+
+.news__item:last-child{
+    margin-right: 0px;
+}
+
+.news__card {
+     display: inline-block;
+}
+
+.news__card-bg{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+
+
+
+.news__card-text-content{
+
+    position: absolute;
+    left: 0px;
+    right: 0px;     
+    bottom: 0px;
+    padding: 25px 30px;
+    padding-right: 43px;
+    min-height: 169px;
+}
+
+
+
+.news__card-title{
+    margin-top: 14px;
+    margin-bottom: 7px;
+}
+
+
+.paginator {
+    text-align: center;
+}
+
+.paginator__display {
+    display: inline-block;
+    margin-right: 32px;
+}
+
+.paginator__item {
+    display: inline-block;
+    list-style-type: none;
+    font-weight: bold;
+    line-height: 32px;
+}
+ 
+.paginator__link {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    color: white;
+}
+.paginator__item--active .paginator__link {
+    background-color: #333;
+}
+
+.paginator__link:hover {
+    background-color: #333;
+}
+
+.paginator__list {
+    display: inline-block;
+}
+
+/*Блок About*/
+
+.about{
+    position: relative;
+    margin-bottom: 164px;
+}
+
+.about-card{
+    padding: 72px 97px;
+    position: absolute;
+    right: 0px;
+    top: 107px;
+    width: 780px;
+    min-height: 454px;
+    border-radius: 4px;
+    background-color: #202123;
+}
+
+.about-card__heding {    
+    margin-bottom: 31px;
+    font-size: 36px;
+}
+
+.about-card__text {
+    margin-bottom: 42px;
+    font: 400 16px/1.7 'Open Sans', sans-serif;
+    
+}
+
+
+.about-img{
+    
+    position: relative;
+    display: inline-block;
+    width: 488px;
+    height: 502px;    
+    border-radius: 4px;
+    background-image: url("img/decor/chess.jpg");
+    background-size: 183%;
+    background-position: top -34px right -43px;
+    background-repeat: no-repeat;
+}
+
+/* Footer */
+
+.footer {
+    height: 147px;
+    position: relative;
+    padding-top: 56px;
+    border-top: solid 1px #353538;
+}
+
+.social {
+    position: absolute;
+    top: 53px;
+    right: 265px;
+}
+
+.social__item{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.social__item:last-child{
+    margin-right: 0px;
+}
+
+.social__link{
+    display: block;
+    height: 36px;
+    width: 36px;
+}
+
+.social__item-tg .social__link {
+    background-image: url("./img/icons/socials/telegram.png");
+}
+
+.social__item-tg .social__link:hover {
+    background-image: url("./img/icons/socials/telegram-hover.png");
+}
+.social__item-vk .social__link {
+    background-image: url("./img/icons/socials/vk.png");
+}
+
+.social__item-vk .social__link:hover {
+    background-image: url("./img/icons/socials/vk-hover.png");
+}
+.social__item-fb .social__link {
+    background-image: url("./img/icons/socials/facebook.png");
+}
+
+.social__item-fb .social__link:hover {
+    background-image: url("./img/icons/socials/facebook-hover.png");
+}
+.social__item-insta .social__link {
+    background-image: url("./img/icons/socials/instagram.png");
+}
+
+.social__item-insta .social__link:hover {
+    background-image: url("./img/icons/socials/instagram-hover.png");
+}
+
+.footer .contact{
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    font: 400 26px/1.42 'Open Sans', sans-serif;
+    text-align: right;    
+}
+
+.footer .contacts__workhours {
+    font-size: 11px;    
+    margin-bottom: -2px;
+    cursor: default;    
+    text-decoration: none;
+}

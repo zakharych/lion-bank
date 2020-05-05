@@ -1,0 +1,238 @@
+
+* {
+    box-sizing: border-box;
+} 
+
+body, html {
+    margin: 0; 
+    padding: 0; 
+    height: 100%; 
+    width: 100%;
+    font-family: "Open Sans", sans-serif; 
+    font-size: 16px;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0; 
+    padding: 0;
+}
+
+a {
+    text-decoration: none; 
+    color:  white;
+}
+
+p, h1, h2, h3, h4, h5, h6 { 
+    margin: 0; 
+    padding: 0;
+    }
+
+ body{
+
+    font: 400 16px/1.42 'Open Sans', sans-serif;
+    color: #ffffff;    
+    background-color: #29292c;
+    background-image:
+    url("img/bg/lion-head-wide.jpg");
+    background-repeat: no-repeat;
+    background-position:center top;
+    
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;    
+}
+    
+    
+.wrapper  {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;    
+   
+}
+
+/* Шапка*/
+
+.header {
+    position: relative;
+    margin-top: 35px;
+    margin-bottom: 108px;
+}
+
+.logo{
+    margin-right: 92px;
+    width: 165px;
+    height: 30px;    
+    display: inline-block;    
+    vertical-align: top;
+    
+}
+
+.menu{
+    margin-top: 8px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu__list{
+    font: 400 14px/1.42 'Open Sans', sans-serif;   /** проверить это правило*/
+            
+}
+
+.menu__item {
+    margin-right: 52px;
+    display: inline-block;
+}
+
+.menu__item:last-child {
+    
+    margin-right: 0px;
+}
+
+
+.menu__url:hover {
+    color: #dfb56d;
+}
+
+.menu__url-active {    
+    color: #dfb56d;
+}
+
+.header .contact{
+    display: inline-block;
+    position: absolute;
+    top: -13px;
+    right: 0px;
+    font: 400 26px/1.42 'Open Sans', sans-serif;
+    text-align: right;    
+}
+
+.page-title {
+    font-size: 72px;
+    margin-bottom: 91px;
+}
+
+.breadcrumbs {
+    font-size: 14px;
+    margin-bottom: 21px;
+}
+
+.2:after {
+    content: "/";
+    display: block;
+}
+
+.contact__phone{
+    color: white;
+}
+
+.contacts__workhours{
+    margin-top: -4px;
+    font-size: 13px;
+    color: #dfb56d;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.contacts__workhours:hover{                           
+    text-decoration: none;
+}
+
+
+.button{
+    padding: 16px 39px;
+    border-radius: 4px;
+    background-color: #dfb56d;
+    border: none;
+    color: white;    
+    font: 700 14px/1.42 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+button:hover {    
+    background-color: #d3a556;
+}
+
+
+
+
+/* Footer */
+
+.footer {
+    height: 147px;
+    position: relative;
+    padding-top: 56px;
+    border-top: solid 1px #353538;
+}
+
+.social {
+    position: absolute;
+    top: 53px;
+    right: 265px;
+}
+
+.social__item{
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+}
+.social__item:last-child{
+    margin-right: 0px;
+}
+
+.social__link{
+    display: block;
+    height: 36px;
+    width: 36px;
+}
+
+.social__item-tg .social__link {
+    background-image: url("./img/icons/socials/telegram.png");
+}
+
+.social__item-tg .social__link:hover {
+    background-image: url("./img/icons/socials/telegram-hover.png");
+}
+.social__item-vk .social__link {
+    background-image: url("./img/icons/socials/vk.png");
+}
+
+.social__item-vk .social__link:hover {
+    background-image: url("./img/icons/socials/vk-hover.png");
+}
+.social__item-fb .social__link {
+    background-image: url("./img/icons/socials/facebook.png");
+}
+
+.social__item-fb .social__link:hover {
+    background-image: url("./img/icons/socials/facebook-hover.png");
+}
+.social__item-insta .social__link {
+    background-image: url("./img/icons/socials/instagram.png");
+}
+
+.social__item-insta .social__link:hover {
+    background-image: url("./img/icons/socials/instagram-hover.png");
+}
+
+.footer .contact{
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    top: 47px;
+    right: 0px;
+    font: 400 26px/1.42 'Open Sans', sans-serif;
+    text-align: right;    
+}
+
+.footer .contacts__workhours {
+    font-size: 11px;    
+    margin-bottom: -2px;
+    cursor: default;    
+    text-decoration: none;
+}
